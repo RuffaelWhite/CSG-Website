@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSG - CyberShield Guardian Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1f1f1f;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.7);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: #00ff99;
+    }
+    nav a {
+      color: #00ff99;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 2rem;
+      background-color: #1e1e1e;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,255,153,0.2);
+    }
+    section h2 {
+      color: #00ff99;
+      margin-top: 0;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #333;
+    }
+    ul li:last-child {
+      border-bottom: none;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #1f1f1f;
+      color: #555;
+      font-size: 0.9rem;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+    /* Child protection notice */
+    .child-protection {
+      background-color: #ff4444;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
+    /* Additional UI/UX improvements */
+    .feature-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .feature-item {
+      background: #222;
+      border-radius: 8px;
+      padding: 1rem;
+      flex: 1 1 calc(50% - 1rem);
+      box-shadow: 0 0 8px rgba(0,255,153,0.3);
+      transition: transform 0.3s ease;
+    }
+    .feature-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(0,255,153,0.6);
+    }
+    .feature-item h3 {
+      margin-top: 0;
+      color: #00ff99;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CSG Dashboard</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="tools.html">Tools</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <div class="child-protection">
+      ⚠️ This site promotes ethical hacking and child protection. All tools and services are intended for legal and educational use only.
+    </div>
+    <section>
+      <h2>Welcome to the CSG Dashboard</h2>
+      <p>Manage your cybersecurity tools, view orders, and monitor your bug bounty projects here.</p>
+    </section>
+    <section>
+      <h2>Ethical Hacking Tools</h2>
+      <div class="feature-list">
+        <div class="feature-item">
+          <h3>Subdomain Finder</h3>
+          <p>Discover hidden subdomains to improve your reconnaissance.</p>
+        </div>
+        <div class="feature-item">
+          <h3>XSS Payload List</h3>
+          <p>Test for cross-site scripting vulnerabilities effectively.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Password Strength Tester</h3>
+          <p>Evaluate password security to prevent unauthorized access.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Network Scanner</h3>
+          <p>Map your network devices and identify potential vulnerabilities.</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Prevention & Attack Mitigation</h2>
+      <div class="feature-list">
+        <div class="feature-item">
+          <h3>Firewall Configuration Guides</h3>
+          <p>Step-by-step instructions to secure your network perimeter.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Intrusion Detection Systems Setup</h3>
+          <p>Implement IDS to monitor and alert on suspicious activities.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Security Patch Management</h3>
+          <p>Keep your systems updated to protect against known exploits.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Incident Response Planning</h3>
+          <p>Prepare your team to respond quickly and effectively to breaches.</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Recent Orders</h2>
+      <ul>
+        <li>Order #1234 - Subdomain Finder - Completed</li>
+        <li>Order #1235 - XSS Payload List - Pending</li>
+        <li>Order #1236 - Bug Bounty Consulting - In Progress</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Bug Bounty Projects</h2>
+      <ul>
+        <li>Project Alpha - Status: Active</li>
+        <li>Project Beta - Status: Completed</li>
+        <li>Project Gamma - Status: Pending</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 CSG - CyberShield Guardian</p>
+  </footer>
+</body>
+</html>
